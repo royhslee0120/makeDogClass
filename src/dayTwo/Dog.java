@@ -2,12 +2,20 @@ package dayTwo;
 
 public class Dog {
 
-    String name;
-    String breed;
+    private String name;
+    private String breed;
 
     public Dog(String name, String breed) {
         this.name = name;
         this.breed = breed;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getBreed() {
+        return breed;
     }
 
     public void bark() {
@@ -15,7 +23,7 @@ public class Dog {
     }
 
     public void wag() {
-        System.out.println(name + "꼬리를 흔듭니다.");
+        System.out.println(name + "가 꼬리를 흔듭니다.");
     }
 
 }
