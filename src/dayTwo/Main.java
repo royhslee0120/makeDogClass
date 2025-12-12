@@ -8,8 +8,16 @@ public class Main {
         Dog dog2 = new Dog("초코", "진돗개");
         Dog dog3 = new Dog("뭉치", "푸들");
 
-        System.out.println(dog1.name + " " + dog1.breed);
-        System.out.println(dog2.name + " " + dog2.breed);
-        System.out.println(dog3.name + " " + dog3.breed);
+        System.out.println(dog1.getName() + " / " + dog1.getBreed());
+        System.out.println(dog2.getName() + " / " + dog2.getBreed());
+        System.out.println(dog3.getName() + " / " + dog3.getBreed());
+
+        dog1.bark();
+        dog2.bark();
+        dog3.bark();
+
+        dog1.wag();
+        dog2.wag();
+        dog3.wag();
     }
 }
